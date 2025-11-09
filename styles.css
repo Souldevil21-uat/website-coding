@@ -1,0 +1,124 @@
+/* ====== styles.css ======
+   Shared stylesheet for all pages
+   Includes layout, colors, and basic form design
+*/
+
+/* GENERAL PAGE STYLING */
+body {
+    font-family: Arial, sans-serif;
+    background: #030816;
+    color: #f5f5f5;
+    margin: 0;
+}
+
+/* Center content within page */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* HEADER AND NAVIGATION BAR */
+header {
+    background: #0b1220;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #ff4b81;
+}
+
+/* NAVIGATION MENU LINKS */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #ff4b81;
+    color: #030816;
+}
+
+/* FORM ELEMENT STYLING */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Text, email, and number inputs */
+input, select, textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444c5c;
+    background: #050b18;
+    color: #f5f5f5;
+}
+
+/* Highlight input when focused */
+input:focus, select:focus, textarea:focus {
+    border-color: #ff4b81;
+    outline: none;
+}
+
+/* Error messages for validation */
+.error {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    min-height: 14px;
+}
+
+/* Primary submit button */
+.primary-btn {
+    background: #ff4b81;
+    color: #030816;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.primary-btn:hover {
+    background: #ff6c97;
+}
+
+/* Summary card shown after submission */
+.summary-card {
+    background: #050b18;
+    border: 1px solid #222a3a;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #aaa;
+    font-size: 0.8rem;
+}
