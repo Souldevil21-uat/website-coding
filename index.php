@@ -15,11 +15,13 @@
 
     <!-- Navigation menu to switch pages -->
     <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="pilot-application.php">Pilot Application</a></li>
-        </ul>
-    </nav>
+    <ul>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="pilot-application.php">Pilot Application</a></li>
+        <li><a href="next-launch.php">Next Launch</a></li>
+    </ul>
+</nav>
+
 </header>
 
 <!-- ===== MAIN CONTENT ===== -->
