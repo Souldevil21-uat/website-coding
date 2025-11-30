@@ -29,8 +29,8 @@ if (!$nextLaunch) { // IF/ELSE CONTROL STRUCTURE
 }
 
 // Pre-format values for initial render & JS handoff
-$nextLaunchIso = $nextLaunch->format('c');                  // ISO 8601 for JS
-$nextLaunchHuman = $nextLaunch->format('F j, Y g:i A T');   // Nice human format
+$nextLaunchIso = $nextLaunch->format('c');                  // JavaScript-friendly ISO 8601
+$nextLaunchHuman = $nextLaunch->format('F j, Y g:i A T');   // Formatting
 
 // Initial message (server-side) for no-JS fallback, mirrors the client logic
 $diff = $now->diff($nextLaunch);
